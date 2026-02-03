@@ -1,0 +1,19 @@
+# Runtime buffers
+buffer/
+error_buffer/
+*.wav
+
+# Certificates & secrets
+certs/
+*.pem
+*.key
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# Environment files
+.env

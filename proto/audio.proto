@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package audio;
+
+service AudioIngestor {
+  rpc SendAudio (AudioChunk) returns (Ack);
+}
+
+message AudioChunk {
+  string device_id = 1;
+  int64 seq = 2;
+  int64 timestamp_ms = 3;
+  int32 sample_rate = 4;
+  bytes wav_data = 5;
+}
+
+message Ack {
+  int64 seq = 1;
+  bool success = 2;
+}
