@@ -3,10 +3,6 @@ buffer/
 error_buffer/
 *.wav
 
-# Certificates & secrets
-certs/
-*.pem
-*.key
 
 # Python cache
 __pycache__/
